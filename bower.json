@@ -1,0 +1,11 @@
+{
+  "name": "ciacademy",
+  "dependencies": {
+    "jquery-placeholder": "latest",
+    "typeahead.js": "~0.11.1",
+    "jquery-ui": "latest",
+    "jquery-selectric": "latest",
+    "jquery-highlight": "~3.3.0"
+  },
+  "private": true
+}

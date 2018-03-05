@@ -1,0 +1,45 @@
+.DS_Store
+
+application/cache/*
+!application/cache/index.html
+!application/cache/.htaccess
+
+application/config/config.php
+application/config/database.php
+application/config/notifications.php
+application/third_party/bulletin_board/mysqlbaglanti/baglan.php
+
+application/vendor/
+application/logs/*
+!application/logs/index.html
+!application/logs/.htaccess
+
+user_guide/
+user_guide_src/build/*
+user_guide_src/cilexer/build/*
+user_guide_src/cilexer/dist/*
+user_guide_src/cilexer/pycilexer.egg-info/*
+/vendor/
+
+composer.lock
+public/js/bower/
+
+application/config/notifications.php
+application/config/notifications.php.example
+
+## Sublime Text cache files
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
+
+## Uploads
+public/photos/*
+public/uploads/*
+!public/photos/.keep
+!public/uploads/.keep
+
+## log files
+*.log
+/nbproject/private/

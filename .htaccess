@@ -1,0 +1,11 @@
+Options +FollowSymLinks
+RewriteEngine on
+#RedirectMatch 301 ~(/images/.+)$ /public/images/$1
+#RewriteCond $1 !^(index\.php|public|dbad|robots\.txt)
+RewriteRule ^/?images/(.*)$ /public/images/$1 [R=301,L]
+RewriteRule ^/?photos/(.*)$ /public/photos/$1 [R=301,L]
+RewriteRule ^/?js/(.*)$ /public/js/$1 [R=301,L]
+RewriteRule ^/?css/(.*)$ /public/css/$1 [R=301,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php/$1 [L]

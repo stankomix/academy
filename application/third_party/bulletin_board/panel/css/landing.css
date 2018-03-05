@@ -1,0 +1,15 @@
+*{padding:0px;margin:0px;border:0px;outline:0px;text-decoration:none;}
+body{width:100%;height:100%;position:relative;padding:0px;margin:0px;background:#666;}
+html{width:100%;height:100%;position:relative;}
+img,a{border:0px;outline:0px;}
+.t{clear:both;}
+.fl{float:left;}
+.fr{float:right;}
+.maa{margin-left:auto;margin-right:auto;}
+
+.ort{max-width:1000px;margin:100px auto 0px auto;}
+.lust{width:100%;height:112px;background:#f0f0f0;text-align:center;}
+.lust img{position:absolute;top:43px;left:50%;margin-left:-111px;}
+.lftr{width:100%;height:93px;background:#fff;border-top:10px solid #b21f24;position:absolute;left:0px;bottom:0px;text-align:center;margin-top:93px;}
+.lftr img{margin-top:35px;}
+.lndgk{width:50%;text-align:center;}

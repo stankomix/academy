@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)http://academyci.app/dashboard -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" id="vpne" content="width=device-width, initial-scale=1,maximum-scale=1">
+<script src="js/bower/jquery/dist/jquery.min.js"></script>
+<script src="js/bower/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
+<script src="js/cfp.js" type="text/javascript"></script>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,300,300italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+<script src="js/bootstrap.js" type="text/javascript"></script>
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="css/progress.css" rel="stylesheet" type="text/css" />
+<link href="css/genel.css" rel="stylesheet" type="text/css" />
+<!--
+<script type="text/javascript">(function() {var walkme = document.createElement('script'); walkme.type = 'text/javascript'; walkme.async = true; walkme.src = 'https://cdn.walkme.com/users/cfd32f3e794c43c2850e39dd70428743/test/walkme_cfd32f3e794c43c2850e39dd70428743_https.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(walkme, s); window._walkmeConfig = {smartLoad:true}; })();</script>
+//-->
+</head><body>
+
+<div class="hps">
+
+<!-- small screen header -->
+
+	<nav class="navbar navbar-default small-header navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+             <img class="menu" src="./dashboard_files/menu-icon.png">Menu
+          </button>
+          <a class="navbar-brand" href="http://academyci.app/dashboard#"><img src="images/logoyz.png"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+          <ul class="nav navbar-nav">
+            <li>
+            	<a href="http://academyci.app/">
+	            	<img src="images/ico1.png">
+	            	Dashboard
+            	</a>
+            </li>
+            <li>
+            	<a href="http://academyci.app/timecard">
+            		<img src="images/timeclockICO.png">
+            		TimeCard
+            	</a>
+            </li>
+            <li>
+            	<a href="http://academyci.app/tests">
+            		<img src="images/ico2.png">
+            		Your Tests
+            	</a>
+            </li>
+            <li>
+            	<a href="http://academyci.app/bb">
+            	<img src="images/ico3.png">
+            	Bulletin Board
+      				</a>
+      			</li>
+      			<li>
+      				<a href="http://academyci.app/files">
+      				<img src="images/ico4.png">
+      				File Manager
+      				</a>
+      			</li>
+                    <!-- View -->
+            
+            <li class="dropdown">
+              <a id="black" href="http://academyci.app/dashboard#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Admin<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="http://academyci.app/admin/users"><img src="images/admin_users.png">Users</a></li>
+                <li><a href="http://academyci.app/admin/bb"><img src="images/admin_bb.png">Bulletins</a></li>
+                <li><a href="http://academyci.app/admin/files"><img src="images/admin_files.png">Files</a></li>
+                <li><a href="http://academyci.app/admin/tests"><img src="images/admin_tests.png">Tests</a></li>
+                <li><a href="http://academyci.app/admin/payroll"><img src="images/admin_payroll.png">Payrolls</a></li> 
+              </ul>
+            </li>
+            
+            <!-- Add -->
+
+            <li class="dropdown">
+              <a id="black" href="http://academyci.app/dashboard#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Add<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+
+                <li>
+                  <a href="http://academyci.app/admin/users/add">
+                      <img src="images/admin_add_user.png">Add User
+                  </a>
+                </li>
+                <li>
+                  <a href="http://academyci.app/admin/bb/add">
+                      <img src="images/admin_add_bb.png">Add Bulletin
+                  </a>
+                </li>
+                <li>
+                  <a href="http://academyci.app/admin/files/add">
+                      <img src="images/admin_add_file.png">Add File
+                  </a>
+                </li>
+
+                <li>
+                  <a href="http://academyci.app/admin/tests/add"><!-- /tests/add -->
+                      <img src="images/admin_add_test.png">Add Test
+                  </a>
+                </li>
+              
+              </ul>
+            </li>
+            <li class="dropdown">
+  	          <a id="black" href="http://academyci.app/dashboard#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="images/logo.png">Hello <!--? echo "$cfpname"; ?--><span class="caret"></span></a>
+  	          <ul class="dropdown-menu">
+  	            <li id="black2"><a href="http://academyci.app/login/logout">Logout</a></li>
+  	          </ul>
+	         </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+<!-- end of-->
+
+<div class="header">
+<div class="ub">
+<div class="ort">
+<div class="fl logoyz"><a href="http://academyci.app/"><img src="./dashboard_files/logoyz.png"></a></div>
+<div class="fr logout"><a href="http://academyci.app/login/logout"><img src="./dashboard_files/logout.png"></a></div>
+<div class="fr hll">Hello <!--? echo "$cfpname"; ?--></div>
+<div class="t"></div>
+</div>
+</div>
+
+	<div class="ab">
+	<div class="ort">
+
+		<div id="nf" class="lnklr admin-bar">
+			<a href="http://academyci.app/" class="scl">
+				<span>
+					<img src="./dashboard_files/ico1.png">
+				</span>
+				Dashboard
+			</a>
+			<a href="http://academyci.app/timecard" class="nrml">
+				<span>
+					<img src="./dashboard_files/timeclockICO.png">
+				</span>
+				TimeCard
+			</a>
+			<a href="http://academyci.app/tests" class="nrml">
+				<span>
+					<img src="./dashboard_files/ico2.png">
+				</span>
+				Your Tests
+			</a>
+			<a href="http://academyci.app/bb" class="nrml">
+				<span>
+					<img src="./dashboard_files/ico3.png">
+				</span>
+				Bulletin Board
+			</a>
+			<a href="http://academyci.app/files" class="nrml">
+				<span>
+					<img src="./dashboard_files/ico4.png">
+				</span>
+				File Manager
+			</a>
+				<style>
+			.admin-bar {width: 900px !important;}
+			/*
+			 *admin bar
+			 */
+			@media screen and (max-width: 900px){
+				
+				.admin-bar {width: 750px !important;}
+				.header .ab .lnklr a {
+					width: 125px;
+				}
+
+			}
+
+		</style>
+			<a id="admin-btn" class="nrml">
+				<span>
+					<img src="./dashboard_files/admin.png">
+				</span>
+				Admin
+			</a>
+			<div class="t"></div>
+				</div>
+	</div>
+
+</div>
+<div class="logo"><a href="http://academyci.app/"><img src="./dashboard_files/logo.png"></a></div>
+</div>
+
+<div class="admin-tiles row" align="center">
+	<ul class="wrapper">
+		
+		<!-- Row 1 -->
+	    
+	    <li class="box">
+	    	<a href="http://academyci.app/admin/users">
+	        	<img src="./dashboard_files/admin_users.png">
+	        	<span>Users</span>
+	        </a>
+	    </li>
+	    <li class="box">
+	    	<a href="http://academyci.app/admin/bb">
+	        	<img src="./dashboard_files/admin_bb.png">
+	        	<span>Bulletins</span>
+	       	</a>
+	    </li>
+	    <li class="box">
+	    	<a href="http://academyci.app/admin/files">
+	        	<img src="./dashboard_files/admin_files.png">
+	        	<span>Files</span>
+	        </a>
+	    </li>
+	    <li class="box">
+	    	<a href="http://academyci.app/admin/tests">
+	        	<img src="./dashboard_files/admin_tests.png">
+	        	<span>Tests</span>
+	        </a>
+	    </li>
+	    <li class="box">
+	    	<a href="http://academyci.app/admin/payroll">
+	        	<img src="./dashboard_files/admin_payroll.png">
+	        	<span>Payrolls</span>
+	        </a>
+	    </li>
+	    
+	    <!-- Row 2 -->
+
+	    <li class="box">
+	    	<a href="http://academyci.app/admin/users/add">
+	        	<img src="./dashboard_files/admin_add_user.png">
+    	    	<span>Add User</span>
+    	    </a>
+	    </li>
+	    <li class="box">
+	    	<a href="http://academyci.app/admin/bb/add">
+	        	<img src="./dashboard_files/admin_add_bb.png">
+	        	<span></span></a><a>Add Bulletin</a>
+	    </li>
+	    <li class="box">
+	    	<a href="http://academyci.app/admin/files/add">
+	        	<img src="./dashboard_files/admin_add_file.png">
+	        	<span>Add File</span>
+	    </a></li><a href="http://academyci.app/admin/files/add">
+	    </a><li class="box"><a href="http://academyci.app/admin/files/add">
+	    	</a><a href="http://academyci.app/admin/tests/add">
+	        	<img src="./dashboard_files/admin_add_test.png">
+	        	<span>Add Test</span>
+	        </a>
+	    </li>
+	</ul>
+</div>
+
+<script>
+	
+	$( "#admin-btn" ).click(function(){
+
+		var display = $( ".admin-tiles" ).css("display");
+		
+		if (display == "none"){
+
+			$( "#admin-btn" ).addClass("red");
+		
+			$( ".admin-tiles" ).slideDown( "slow", function() {
+				
+				$( ".admin-tiles" ).css("display", "inherit");
+			
+			});
+		
+		} else {
+			
+			$( "#admin-btn" ).attr("class", "nrml");
+
+			$( "#admin-btn" ).removeClass("red");
+			
+			$( ".admin-tiles" ).slideUp( "slow", function() {
+			
+				$( ".admin-tiles" ).css("display", "none");
+			
+			});
+		
+		}
+
+	});
+
+</script>
+<script src="./dashboard_files/dashboard.js" type="text/javascript"></script>
+<script src="./dashboard_files/jquery-asPieProgress.min.js" type="text/javascript"></script>
+<script>
+	$(document).ready(function () {
+		$('.pie_progress').asPieProgress("go","0%");
+	});
+</script>
+
+
+
+<div class="ort">
+
+	<div class="banner">
+
+		<div class="tstblm fl">
+
+			<div class="greeting-text">
+				Hello Joe!
+			</div>			
+
+			<div class="fl stats">
+				<div class="pie_progress" role="progressbar" data-barcolor="#b11f24" data-trackcolor="#626262" data-barsize="25" aria-valuenow="0">
+					<div class="pie_progress__number">0%</div>
+				<div class="pie_progress__svg"><svg version="1.1" preserveAspectRatio="xMinYMin meet" viewBox="0 0 160 160"><ellipse rx="67.5" ry="67.5" cx="80" cy="80" stroke="#626262" fill="none" stroke-width="25"></ellipse><path fill="none" stroke-width="25" stroke="#b11f24" d="M80,12.5 A67.5,67.5 0 0 1 80,12.5" style="stroke-dasharray: 0, 0;"></path></svg></div></div>
+			</div>
+
+			<div class="fl yzlr">
+
+				<div class="yzb">
+					Hello Joe!
+				</div>
+				
+				<div class="yzi">
+					You’ve completed <strong>0</strong> of your <strong>8</strong> mandatory classes!
+					
+					<br>
+
+					
+						You have <strong>8</strong> more to take. You’d better start signing up!
+
+					
+				</div>
+				<a href="http://academyci.app/tests" class="rnk">See Your Tests</a>
+			</div>
+
+			<div class="t"></div>
+		</div>
+		
+		<div class="fr sgblm perf">
+			<div class="krmczg"></div>
+			<div class="blmubslk">PERFORMANCE BONUS INDICATOR</div>
+							<span>Bonus progress not yet configured for display</span>
+			
+		</div>
+
+	</div>
+
+<div class="midd">
+
+	<div class="fl slblm">
+		<div class="krmczg"></div>
+		<div class="blmubslk">BULLETIN BOARD</div>
+		<div class="blmabslk">RECENTLY ADDED POSTS</div>
+
+		<div class="bbpost">
+
+			
+				<a href="http://academyci.app/bb/details/38">
+					<div class="icnds">
+						<div class="icn">
+							<img src="./dashboard_files/bbico4.png" class="ico4">
+						</div>
+					</div>
+					<div class="yzlr">
+						kdskfcsdvsc						<br>
+						<span>
+							Event  / November 30, -0001						</span>
+					</div>
+				</a>
+
+			
+				<a href="http://academyci.app/bb/details/22">
+					<div class="icnds">
+						<div class="icn">
+							<img src="./dashboard_files/bbico2.png" class="ico2">
+						</div>
+					</div>
+					<div class="yzlr">
+						Welcome Susan Boster, New Director of Talent!!						<br>
+						<span>
+							New Hires  / January 14, 2016						</span>
+					</div>
+				</a>
+
+			
+				<a href="http://academyci.app/bb/details/13">
+					<div class="icnds">
+						<div class="icn">
+							<img src="./dashboard_files/bbico2.png" class="ico2">
+						</div>
+					</div>
+					<div class="yzlr">
+						Lorem Ipsum						<br>
+						<span>
+							New Hires  / December 28, 2015						</span>
+					</div>
+				</a>
+
+			
+				<a href="http://academyci.app/bb/details/7">
+					<div class="icnds">
+						<div class="icn">
+							<img src="./dashboard_files/bbico1.png" class="ico1">
+						</div>
+					</div>
+					<div class="yzlr">
+						The 2015 Client Appreciation Party Video Is Online!						<br>
+						<span>
+							News  / December 25, 2015						</span>
+					</div>
+				</a>
+
+			
+		</div>
+
+	<div class="bbpost">
+
+		
+	</div>
+
+	<a href="http://academyci.app/bb" class="sae rnk">See All Entries</a>
+	</div>
+	<div class="fl sgblm file-m">
+		<div class="krmczg"></div>
+		<div class="blmubslk">FILE MANAGER</div>
+		<div class="blmabslk">RECENTLY ADDED FILES</div>
+		<div class="fmpost">
+							<a href="javascript:;" onclick="embeddedContent(60);">
+					<div class="icn">
+						<img src="http://academyci.app/dashboard">
+					</div>
+					<div class="yzlr">
+						Bannana					</div>
+				</a>
+							<a href="javascript:;" onclick="embeddedContent(58);">
+					<div class="icn">
+						<img src="http://academyci.app/dashboard">
+					</div>
+					<div class="yzlr">
+						hjv,vhjjv.vjvh					</div>
+				</a>
+							<a href="javascript:;" onclick="embeddedContent(57);">
+					<div class="icn">
+						<img src="http://academyci.app/dashboard">
+					</div>
+					<div class="yzlr">
+						dhjdfed					</div>
+				</a>
+							<a href="javascript:;" onclick="embeddedContent(56);">
+					<div class="icn">
+						<img src="http://academyci.app/dashboard">
+					</div>
+					<div class="yzlr">
+						Banana					</div>
+				</a>
+			
+		</div>
+		<a href="http://academyci.app/files" class="sae rnk">See All Files</a>
+	</div>
+</div>
+
+<div class="t">&nbsp;</div>
+<div class="footer">
+<div class="ort">
+<div class="fl flogoyz"><a href="http://academyci.app/index.php"><img src="./dashboard_files/flogoyz.png"></a></div>
+<div class="fr anyq"><a href="mailto:cfpacademy@fireprotected.com"><div class="fl icn"><img src="./dashboard_files/fico.png"></div><div class="fl yz">Any questions?<br>Click here to ask now via e-mail.</div></a><div class="t"></div></div>
+<div class="t"></div>
+<div style="margin: auto;">
+<a href="https://bitbucket.org/gdly/cfpacademyv1/commits/">
+<font style="color:#cccccc; font-size:10px"></font>
+</a>
+</div>
+</div>
+</div>
+<div class="footer_mobil">
+<div class="ort">
+<a href="mailto:cfpacademy@fireprotected.com">
+<div class="mbficn"><img src="./dashboard_files/fico.png"></div>
+<div class="yz">Any questions?<br>Click here to ask now via e-mail.</div>
+</a>
+<div class="flogoyz"><a href="http://academyci.app/index.php"><img src="./dashboard_files/flogoyz.png"></a></div>
+</div>
+</div>
+</div>
+<div class="bosdv"></div>
+
+<div style="display:none;" id="actionConfirmation">
+	<div class="rndvds trndvds">
+		<div class="bslk" id="confirmationTitle"></div>
+
+        <div class="bbfmaln">
+
+        	<div class="missingTitle"></div>
+            <p id="confirmationMessage"> </p>
+
+            <div class="t"></div>
+
+            <div class="fr frm4">
+
+                <input type="button" class="inptsbt dialog-button" value="Ok">
+                <a href="javascript:$(&#39;#actionConfirmation&#39;).hide();" class="inptgri">
+                    Cancel
+                </a>
+            </div>
+
+            <div class="t"></div>
+
+        </div>
+
+	</div>
+</div>
+
+<div style="display:none;" id="overlay">
+	<div class="rndvds trndvds">
+		<div class="bslk" id="overlayTitle"></div>
+
+		<div class="bbfmaln">
+			<div class="missingTitle" id="overlayMessage"></div>
+			<div class="t"></div>
+			<div>
+				<button onclick="closeOverlay()" class="rnk sae bbsae">Ok</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div style="display:none;" id="actionSelection">
+	<div class="rndvds trndvds">
+		<div class="bslk" id="selectionTitle"></div>
+
+        <div class="bbfmaln">
+
+        	<div class="missingTitle"></div>
+            <p id="selectionMessage"> </p>
+
+            <div class="t"></div>
+
+            <div class="fr frm4">
+
+                <input type="button" class="inptsbt dialog-button" value="Yes">
+                <input type="button" class="inptgri dialog-button" value="No">
+            </div>
+
+            <div class="t"></div>
+
+        </div>
+
+	</div>
+</div>        
+
+</div></body></html>
