@@ -17,26 +17,14 @@ class Migration_Create_test_questions_table extends CI_Migration
                 'type' => 'VARCHAR',
                 'constraint' => 255,
             ),
+			'options' => array(
+                'type' => 'TEXT'
+            ),
             'correct_answer' => array(
                 'type' => 'VARCHAR',
                 'constraint' => 255,
             ),
-            'answer_a' => array(
-                'type' => 'VARCHAR',
-                'constraint' => 255,
-            ),
-            'answer_b' => array(
-                'type' => 'VARCHAR',
-                'constraint' => 255,
-            ),
-            'answer_c' => array(
-                'type' => 'VARCHAR',
-                'constraint' => 255,
-            ),
-            'answer_d' => array(
-                'type' => 'VARCHAR',
-                'constraint' => 255,
-            ),
+            
             'status' => array(
                 'type' => 'INT',
                 'constraint' => 1,

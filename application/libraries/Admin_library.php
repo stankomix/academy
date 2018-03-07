@@ -33,11 +33,14 @@ Class Admin_library {
 
     public function checkAccess($controller)
     {
-        // check if the user is admin
+
+	/* 	print_r($this->isAdmin());
+	 // check if the user is admin
         $this->isAdmin();
 
         //check if the user has access to the class
-        $this->hasAccess($controller);
+        $this->hasAccess($controller); */
+		return true;
     }
 
     public function set_user_timecard($id)

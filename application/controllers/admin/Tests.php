@@ -1,5 +1,6 @@
 <?php
 
+
 /**
  * Tests Controller class file.
  *
@@ -16,6 +17,7 @@ class Tests extends MY_Controller {
 
 	public function _remap($method, $params = [])
     {
+		
 		// check if user has access to controller
     	$this->load->library('admin_library');
     	$this->admin_library->checkAccess('tests');
@@ -46,6 +48,7 @@ class Tests extends MY_Controller {
 
 		redirect('admin/tests/add');
 	}
+	
 
 	public function edit($id)
 	{

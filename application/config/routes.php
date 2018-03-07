@@ -119,6 +119,17 @@ $route['admin/tests/(:num)/edit']['POST'] = 'admin/tests/edit/$1';
 $route['admin/tests/(:num)/delete']['GET'] = 'admin/pages/delete_test/$1';
 $route['admin/tests/(:num)/delete']['POST'] = 'admin/tests/delete/$1';
 
+## TEST QUESTIONS
+// add 
+$route['admin/questions/add/(:num)']['GET'] = 'admin/test_questions/index/$1';
+$route['admin/questions/add/(:num)']['POST'] = 'admin/test_questions/add/$1'; 
+
+// update
+$route['admin/questions/edit/(:num)']['GET'] = 'admin/test_questions/edit/$1';
+$route['admin/questions/update/(:num)']['POST'] = 'admin/test_questions/update/$1'; 
+
+//Remove 
+$route['admin/questions/delete/(:num)']['GET'] = 'admin/test_questions/remove/$1';
 ## ADMINS
 // add
 $route['admin/admins/add']['GET'] = 'admin/pages/add_admin';
