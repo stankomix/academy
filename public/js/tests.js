@@ -41,6 +41,7 @@ function ekranagore () {
 }
 
 function tstblm (idne) {
+	console.log();
 	$(".tstler").css({ display : "none" });
 	$("#tstler"+idne).css({ display : "block" });
 

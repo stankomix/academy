@@ -113,7 +113,21 @@ while ($bb = mysql_fetch_assoc($bb_sorgu)) {
 */
 ?>
 
-					<tr>
+<?php if(count($all_tests) > 0){ ?>
+	<?php foreach($all_tests as $all_data){ ?>
+			<tr>
+				<td class="itd"><?php echo $all_data->title; ?></td>
+				<td><?php if($all_data->mandatory){ echo "Yes";}else{echo "No";} ?></td>
+				<td>0</td>
+				<td><?php echo $all_data->test_type; ?></td>
+				<td><?php echo $all_data->status; ?></td>
+				<td class="std"><a href="#" class="nrml">Start Test</a></td>
+			</tr>
+	<?php } ?>
+<?php } ?>
+
+
+					<!-- <tr>
 						<td class="itd">
 							Interacting with Customers
 						</td>
@@ -136,7 +150,7 @@ while ($bb = mysql_fetch_assoc($bb_sorgu)) {
 								Appointment
 							</a>
 						</td>
-					</tr>
+					</tr> -->
 
 				<?php //endforeach; ?>
 

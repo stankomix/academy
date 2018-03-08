@@ -63,6 +63,8 @@ $route['public/(:any)'] = 'public/$1';
 
 $route['bb/(:any)'] = 'bulletin_board/$1';
 
+//User Tests
+$route['start_test/(:num)'] = "Tests/startTest/$1";
 ### ADMIN ROUTES ###
 
 // payroll pagination

@@ -16,8 +16,16 @@ class Tests extends MY_Controller {
 		$this->load->model('test_model', '', TRUE);
 
 		$this->arViewData['progress'] = $this->test_model->progress($this->session->user_id);
-
-		$this->_layout('tests/index');
+		
+		$this->arViewData['all_tests'] = $this->test_model->all();
+		
+	
+	$this->_layout('tests/index');
 	}
 
+	public function startTest($test_id){
+		
+		$this->_layout('tests/start_test');
+	}
+	
 }

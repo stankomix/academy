@@ -6,6 +6,7 @@
 <script src="/js/jquery.js"></script>
 <script src="/js/jquery-ui.min.js" type="text/javascript"></script>
 <script src="/js/cfp.js" type="text/javascript"></script>
+<script src="/js/tests.js" type="text/javascript"></script>
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,300,300italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 <script src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js" type="text/javascript"></script>
 <script src="/js/bootstrap.js" type="text/javascript"></script>
