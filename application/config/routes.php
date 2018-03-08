@@ -65,6 +65,7 @@ $route['bb/(:any)'] = 'bulletin_board/$1';
 
 //User Tests
 $route['start_test/(:num)'] = "Tests/startTest/$1";
+$route['testResult']['POST'] = "Tests/testResult";
 ### ADMIN ROUTES ###
 
 // payroll pagination
