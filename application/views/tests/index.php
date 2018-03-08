@@ -121,7 +121,7 @@ while ($bb = mysql_fetch_assoc($bb_sorgu)) {
 				<td>0</td>
 				<td><?php echo $all_data->test_type; ?></td>
 				<td><?php echo $all_data->status; ?></td>
-				<td class="std"><a href="#" class="nrml">Start Test</a></td>
+				<td class="std"><a href="start_test/<?php echo $all_data->id ?>" class="nrml">Start Test</a></td>
 			</tr>
 	<?php } ?>
 <?php } ?>
